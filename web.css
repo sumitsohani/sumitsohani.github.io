@@ -4,6 +4,7 @@
 	--accent-red: #e13c0e;
 	--grey: #666363;
 	--footer-size: 26.4px;
+	--normal: #e68c25;
 }
 
 
@@ -63,11 +64,27 @@ body {
  	-webkit-background-clip: text;
     color: transparent;
 	font-size:140px;
-    font-family:Helvetica;
+    font-family:Helvetica, sans-serif;
 	font-weight:bold;
 	background-size: 1080px 200px;
   margin:0 auto;background-position-x:50%;
   text-align: center;
+}
+
+.normal{
+	font-size: 35px;
+	color: var(--grey);
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	opacity: .8;
+}
+
+.emph {
+	color: var(--normal);
+	font-weight: 400;
 }
 
 .fa-heart {
@@ -92,7 +109,15 @@ body {
 	.D {
 		font-size: 13.72549vw;
 		background-size: 100vw 19.6vw;
+	}
+	.normal {
+		font-size: 3.43vw;
+	}
+}
 
+@media all and (max-width: 770px) {
+	.normal {
+		font-size: var(--footer-size);
 	}
 }
 @media all and (max-width: 550px) {
