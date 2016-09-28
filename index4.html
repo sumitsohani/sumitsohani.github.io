@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <title>Sumit Sohani</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(updateSlideHolderSize);
+$(window).resize(updateSlideHolderSize);
+
+function updateSlideHolderSize() {
+  $(".particles-js-canvas-el").height($(".box").height() + 50);
+  $("#particles-js").css({height:"auto"});
+  $("#particles-js").height($("#particles-js").height() - 5);
+
+};
+</script>
+  <style>
+  :root {
+  --background-peach: #F2DBBA;
+  --footer-blue: #e4572e;
+  --accent-red: #e13c0e;
+  --grey: #666363;
+  --footer-size: 30px;
+  --normal: #e68c25;
+  --edge: 50px;
+  --innerpad: 25px;
+}
+    html {
+    }
+    body {
+      padding: 50px;
+
+    }
+    .box {
+      display: inline-block;
+      min-height: calc(100vh - 100px);
+      height: auto;
+      width: calc(100vw - 100px);
+      padding: 25px;
+      color: white;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 80px;
+      font-weight: 700;
+      text-shadow:3px 3px #f49d37;
+    }
+
+    .cntnt {
+      min-height: calc(100vh - 190px);
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+    .ftr {
+      margin-top: 10px;
+      height: 30px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .fa {
+      margin: 0px 7px;
+      opacity: 0.7;
+      color: white;
+    }
+
+    .fa:hover {
+      opacity: 1;
+    }
+
+    span {
+      background: url(http://www.crystalxp.net/galerie/img/img-wallpapers-colors-krystof-----15400.jpg) -20px -20px repeat;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display:block;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    .pend {
+      margin-bottom: 0px;
+    }
+
+    a {
+      color: #f49d37;
+      font-weight: 700;
+    }
+    a:hover {
+      color: #FFFFFF;
+    }
+
+    #particles-js{
+ width: 100%;
+  height: auto;
+  background-color: #e4572e;
+}
+
+.particles-js-canvas-el {
+}
+
+</style>
+</head>
+<body>
+<div id="particles-js">
+  <div class="box"> 
+    <div class="cntnt">
+    <h1>hi, i'm sumit!</h1>
+    <p>I'm currently a sophomore at Brown University, studying Computer Science-Economics. Startups, consulting, building apps, and education are cool things I'm currently exploring.</p>
+
+    <p>I mentor for <a href="https://www.brown.edu/academics/science-center/outreach/science-prep/about/mentors">Brown Science Prep</a>, manage a workshops team at the <a href="https://www.facebook.com/ccgbrown">Collegiate Consulting Group</a>, serve as a co-publicity chair for Brown's South Asian Student Association, and TA for <a href="https://cs.brown.edu/courses/cs019/2016/">cs019</a>. Last summer, I interned at <a href="http://spiralyze.com">Spiralyze</a> in Atlanta, where I learned about conversion optimization, design, and data science. Those are just the highlights: <a href="Sumit_Sohani.pdf">here's</a> my full resume.</p>
+
+    <p class="pend">Currently, I'm trying to bootstrap <a href="https://drive.google.com/a/brown.edu/file/d/0Bzqv7wmuHqw_elJSdEUtbjdhX0k/view?usp=drive_web">anonyMe</a>, a website that makes it easy for teachers anywhere to anonymously grade their students, reducing bias in the classroom. Right now, it's more of a side project, but anonyMe recently <a href="https://mobile.twitter.com/SWeduPVD/status/780188100865777665">won</a> Rhode Island's inaugural <a href="http://www.providenceswedu.com/">Startup Weekend EDU</a>.</p>
+  </div>
+    <div class="ftr">
+      <a href="mailto:sumit_sohani@brown.edu"><i class="fa fa-envelope sm"></i></a>
+      <a href="https://linkedin.com/in/sumit-sohani"><i class="fa fa-linkedin sm"></i></a>
+      <a href="https://github.com/sumitsohani"><i class="fa fa-github sm"></i></a>
+      <a href="https://www.facebook.com/sumitsohani"><i class="fa fa-facebook sm"></i> </a>
+    </div>
+  </div>
+</div>
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+  
+  
+</body>
+
+</html>
